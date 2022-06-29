@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/*package src.yugioh.gui.boardframe;
 
 import javax.swing.JButton;
 
@@ -63,4 +63,4 @@ public class CardButton extends JButton {
 			return height;
 		return 0;
 	}
-}
+}*/

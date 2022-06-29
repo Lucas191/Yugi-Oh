@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/*package src.yugioh.gui.boardframe;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -36,4 +36,4 @@ public class NextPhaseButton extends JButton implements ActionListener{
 			GUI.getBoardFrame().getFieldPanel().getOpponentPlayerPanel().getPlayerNamePanel().updatePhase();
 		}
 	}
-}
+}*/

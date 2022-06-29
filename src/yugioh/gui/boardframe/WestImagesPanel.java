@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 public class WestImagesPanel extends JPanel {
 	private JLabel activeImage = new JLabel(new ImageIcon("images/YugiDuel.jpg"));
 	private JLabel opponentImage = new JLabel(new ImageIcon("images/KaibaDuel.jpg"));
-	Dimension dimension = new Dimension(300,760-15-new CardButton().getPreferredSize().height);
+	Dimension dimension = new Dimension(300,760-15-new SizeLabelLayout.CardButton().getPreferredSize().height);
 	boolean swapped = false;
 	
 	public WestImagesPanel() {

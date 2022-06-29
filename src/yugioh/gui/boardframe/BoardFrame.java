@@ -27,7 +27,7 @@ public class BoardFrame extends JFrame implements ActionListener{
 	private HandPanel opponentHandPanel;
 	private HandPanel activeHandPanel;
 	private WestImagesPanel westImagesPanel;
-	private EastButtonsPanel eastButtonsPanel;
+	private SizeLabelLayout.EastButtonsPanel eastButtonsPanel;
 	
 	private MonsterCard attackingMonster;
 	private boolean toSwitch = false;
@@ -61,7 +61,7 @@ public class BoardFrame extends JFrame implements ActionListener{
 		opponentHandPanel = new HandPanel(false);
 		opponentHandPanel.setPreferredSize(new Dimension(activeHandPanel.getPreferredSize().width,15));
 		westImagesPanel = new WestImagesPanel();
-		eastButtonsPanel =new EastButtonsPanel();
+		eastButtonsPanel =new SizeLabelLayout.EastButtonsPanel();
 	}
 
 	private void addPanels(){//java.awt.Image.SCALE_SMOOTH
@@ -112,11 +112,11 @@ public class BoardFrame extends JFrame implements ActionListener{
 		this.westImagesPanel = westImagesPanel;
 	}
 
-	public EastButtonsPanel getEastButtonsPanel() {
+	public SizeLabelLayout.EastButtonsPanel getEastButtonsPanel() {
 		return eastButtonsPanel;
 	}
 
-	public void setEastButtonsPanel(EastButtonsPanel eastButtonsPanel) {
+	public void setEastButtonsPanel(SizeLabelLayout.EastButtonsPanel eastButtonsPanel) {
 		this.eastButtonsPanel = eastButtonsPanel;
 	}
 

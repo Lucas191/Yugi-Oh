@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/* src.yugioh.gui.boardframe;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -127,4 +127,4 @@ public class MonsterButton extends CardButton implements ActionListener{
 		}
 		GUI.getBoardFrame().updateBoardFrame();
 	}
-}
+}*/

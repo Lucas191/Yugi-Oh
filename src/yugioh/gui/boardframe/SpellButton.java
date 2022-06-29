@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/*package src.yugioh.gui.boardframe;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -49,4 +49,4 @@ public class SpellButton extends CardButton implements ActionListener{
 		}
 		GUI.getBoardFrame().updateBoardFrame();
 	}
-}
+}*/

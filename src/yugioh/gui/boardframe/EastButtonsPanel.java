@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/*package src.yugioh.gui.boardframe;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -44,4 +44,4 @@ public class EastButtonsPanel extends JPanel {
 			SwitchMonsterModeButton switchMonsterModeButton) {
 		this.switchMonsterModeButton = switchMonsterModeButton;
 	}
-}
+}*/

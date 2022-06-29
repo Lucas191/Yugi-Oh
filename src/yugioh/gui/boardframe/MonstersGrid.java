@@ -11,15 +11,15 @@ import src.yugioh.cards.MonsterCard;
 
 @SuppressWarnings("serial")
 public class MonstersGrid extends JPanel {
-	private MonsterButton [] monsterButtons;
+	private SizeLabelLayout.MonsterButton [] monsterButtons;
 	private ArrayList<MonsterCard> monstersArea= new ArrayList<MonsterCard>();
 	private boolean active;
 	public MonstersGrid(boolean active) {
 		setLayout(new GridLayout(1, 5));
-		monsterButtons = new MonsterButton [5]; 
+		monsterButtons = new SizeLabelLayout.MonsterButton [5];
 		this.active=active;
 			for(int i = 0; i<5 ; i++){
-			monsterButtons[i]= new MonsterButton();
+			monsterButtons[i]= new SizeLabelLayout.MonsterButton();
 			add(monsterButtons[i]);     
 		}
 
@@ -37,23 +37,23 @@ public class MonstersGrid extends JPanel {
 		for (int i = 0; i < 5; i++) {
 			if(i<monstersArea.size()){
 				MonsterCard addedMonster = monstersArea.get(i);
-				monsterButtons[i] = new MonsterButton(addedMonster);
+				monsterButtons[i] = new SizeLabelLayout.MonsterButton(addedMonster);
 				if(addedMonster.getMode()==Mode.DEFENSE)
 					monsterButtons[i].toDefence();
 				if(addedMonster.isHidden() && !active)
 					monsterButtons[i].setToolTipText(null);
 				add(monsterButtons[i]);
 			}
-			else add(new MonsterButton());
+			else add(new SizeLabelLayout.MonsterButton());
 		}
 		repaint();
 		validate();
 	}
 	
-	public MonsterButton[] getMonsterButtons() {
+	public SizeLabelLayout.MonsterButton[] getMonsterButtons() {
 		return monsterButtons;
 	}
-	public void setMonsterButtons(MonsterButton[] monsterButtons) {
+	public void setMonsterButtons(SizeLabelLayout.MonsterButton[] monsterButtons) {
 		this.monsterButtons = monsterButtons;
 	}
 }

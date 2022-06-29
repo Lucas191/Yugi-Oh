@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/*package src.yugioh.gui.boardframe;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -37,3 +37,4 @@ public class EndTurnButton extends JButton implements ActionListener{
 	}
 	
 }
+*/

@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/*package src.yugioh.gui.boardframe;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -40,3 +40,4 @@ public class GraveyardButton extends JButton {
 		else setIcon(graveyard);
 	}
 }
+*/

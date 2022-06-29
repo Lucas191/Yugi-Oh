@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/*package src.yugioh.gui.boardframe;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -34,3 +34,4 @@ public class SwitchMonsterModeButton extends JButton implements ActionListener{
 				"Selecione um monstro para alternar entre ATK e DEF");
 	}
 }
+*/

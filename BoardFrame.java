@@ -10,7 +10,8 @@ import javax.swing.JPanel;
 
 import src.yugioh.cards.MonsterCard;
 import src.yugioh.cards.spells.SpellCard;
-import src.yugioh.gui.boardframe.EastButtonsPanel;
+import src.yugioh.gui.boardframe.SizeLabelLayout;
+import src.yugioh.gui.boardframe.SizeLabelLayout.EastButtonsPanel;
 import src.yugioh.gui.boardframe.FieldPanel;
 import src.yugioh.gui.boardframe.HandPanel;
 import src.yugioh.gui.boardframe.WestImagesPanel;
@@ -27,7 +28,7 @@ public class BoardFrame extends JFrame implements ActionListener{
 	private HandPanel opponentHandPanel;
 	private HandPanel activeHandPanel;
 	private WestImagesPanel westImagesPanel;
-	private EastButtonsPanel eastButtonsPanel;
+	private SizeLabelLayout.EastButtonsPanel eastButtonsPanel;
 	
 	private MonsterCard attackingMonster;
 	private boolean toSwitch = false;
@@ -61,7 +62,7 @@ public class BoardFrame extends JFrame implements ActionListener{
 		opponentHandPanel = new HandPanel(false);
 		opponentHandPanel.setPreferredSize(new Dimension(activeHandPanel.getPreferredSize().width,15));
 		westImagesPanel = new WestImagesPanel();
-		eastButtonsPanel =new EastButtonsPanel();
+		eastButtonsPanel =new SizeLabelLayout.EastButtonsPanel();
 	}
 
 	private void addPanels(){
@@ -110,11 +111,11 @@ public class BoardFrame extends JFrame implements ActionListener{
 		this.westImagesPanel = westImagesPanel;
 	}
 
-	public EastButtonsPanel getEastButtonsPanel() {
+	public SizeLabelLayout.EastButtonsPanel getEastButtonsPanel() {
 		return eastButtonsPanel;
 	}
 
-	public void setEastButtonsPanel(EastButtonsPanel eastButtonsPanel) {
+	public void setEastButtonsPanel(SizeLabelLayout.EastButtonsPanel eastButtonsPanel) {
 		this.eastButtonsPanel = eastButtonsPanel;
 	}
 

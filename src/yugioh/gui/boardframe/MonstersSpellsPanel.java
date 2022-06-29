@@ -14,7 +14,7 @@ public class MonstersSpellsPanel extends JPanel{
 		setLayout(new BorderLayout());
 		monstersGrid = new MonstersGrid(active);
 		spellsGrid = new SpellsGrid(active);
-		setPreferredSize(new Dimension(CardButton.getDimension('W')*5,300));
+		setPreferredSize(new Dimension(SizeLabelLayout.CardButton.getDimension('W')*5,300));
 		if(!active){
 			add(monstersGrid,BorderLayout.SOUTH);
 			add(spellsGrid,BorderLayout.NORTH);	

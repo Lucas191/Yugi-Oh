@@ -1,4 +1,4 @@
-package src.yugioh.gui.boardframe;
+/*package src.yugioh.gui.boardframe;
 
 import java.awt.*;
 
@@ -31,4 +31,4 @@ public class DeckButton extends JButton {
 		else 
 			setText(""+Card.getBoard().getOpponentPlayer().getField().getDeck().getDeck().size());
 	}
-}
+}*/
